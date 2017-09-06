@@ -1,0 +1,27 @@
+[global]
+	workgroup = <%= @workgroup %>
+<% if @realm -%>
+	realm = <%= @realm %>
+<% end -%>
+	security = <%= @security %>
+<% if @kerberos_method -%>
+	kerberos method = <%= @kerberos_method %>
+<% end -%>
+<% if @log_file -%>
+	log file = <%= @log_file %>
+<% end -%>
+<% if @max_log_size -%>
+	max log size = <%= @max_log_size %>
+<% end -%>
+<% if @winbind_use_default_domain -%>
+	winbind use default domain = <%= @winbind_use_default_domain ? 'Yes' : 'No' %>
+<% end -%>
+<% if @winbind_nss_info -%>
+	winbind nss info = <%= @winbind_nss_info %>
+<% end -%>
+<% if @winbind_refresh_tickets -%>
+	winbind refresh tickets = <%= @winbind_refresh_tickets ? 'Yes' : 'No' %>
+<% end -%>
+<% if @winbind_offline_logon -%>
+	winbind offline logon = <%= @winbind_offline_logon ? 'Yes' : 'No' %>
+<% end -%>

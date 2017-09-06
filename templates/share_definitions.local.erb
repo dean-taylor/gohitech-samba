@@ -1,0 +1,20 @@
+# This file is for locally defined shares.
+# Local changes will NOT be overwritten by Puppet.
+
+;[homes]
+;       comment = Home Directories
+;       browseable = no
+;       writable = yes
+;       valid users = %S
+;       valid users = <%= @workgroup -%>\%S
+
+# A publicly accessible directory, but read only, except for people in
+# the "staff" group
+;[public]
+;       comment = Public Stuff
+;       path = /home/samba
+;       public = yes
+;       writable = yes
+;       printable = no
+;       write list = +staff
+

@@ -1,0 +1,11 @@
+[global]
+        workgroup = <%= @workgroup %>
+<% if @realm -%>
+        realm = <%= @realm %>
+<% end -%>
+        security = <%= @security %>
+<% if @kerberos_method -%>
+        kerberos method = <%= @kerberos_method %>
+<% end -%>
+        log file = <%= @log_file %>
+        max log size = <%= @max_log_size %>

@@ -1,0 +1,12 @@
+<% if @backend -%>
+	idmap config <%= @domain %> : backend = <%= @backend %>
+<% end -%>
+<% if @default -%>
+	idmap config <%= @domain %> : default = <%= @default ? 'Yes' : 'No' %>
+<% end -%>
+<% if @range -%>
+	idmap config <%= @domain %> : range = <%= @range %>
+<% end -%>
+<% if @schema_mode -%>
+	idmap config <%= @domain %> : schema_mode = <%= @schema_mode %>
+<% end -%>

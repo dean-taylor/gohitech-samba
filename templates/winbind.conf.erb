@@ -1,0 +1,14 @@
+realm = <%= @realm %>
+security = ads
+kerberos method = secrets and keytab
+winbind use default domain = yes
+winbind nss info = rfc2307
+winbind refresh tickets = yes
+winbind offline logon = yes
+idmap config UNIWA : schema_mode = rfc2307
+idmap config UNIWA : default = yes
+idmap config UNIWA : range = 10000-1010000000
+idmap config UNIWA : backend = ad
+idmap config * : range = 1010000001-1012000000
+idmap config * : backend = tdb
+template shell = /bin/bash

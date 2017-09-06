@@ -1,0 +1,14 @@
+{
+  "name": "gohitech-samba",
+  "version": "0.1.0",
+  "author": "Dean Taylor",
+  "summary": "Samba puppet module",
+  "license": "Apache 2.0",
+  "source": "https://github.com/dean-taylor/gohitech-samba.git",
+  "project_page": "https://github.com/dean-taylor/gohitech-samba",
+  "issues_url": "://github.com/dean-taylor/gohitech-samba.git/issues",
+  "description": "Samba, Winbind, cifs-utils installation and configuration",
+  "dependencies": [ ]
+}
+
+

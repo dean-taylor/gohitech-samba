@@ -1,0 +1,5 @@
+[global]
+workgroup = <%= @workgroup %>
+<% if @security = 'ads' -%>include = /etc/samba/winbind.conf<% end %>
+include = /etc/samba/share_definitions.local
+
