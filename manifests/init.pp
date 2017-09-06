@@ -1,5 +1,6 @@
 class samba (
   $enable_winbind             = false,
+  $allow_trusted_domains      = true,	# Yes/No
   $idmap_config               = undef,	# deprecated
   $kerberos_method            = undef,	# secrets only|system keytab|dedicated keytab|secrets and keytab
   $log_file                   = $samba::params::log_file,

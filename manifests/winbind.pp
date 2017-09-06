@@ -26,6 +26,8 @@ class samba::winbind (
   $nss_info           = 'template',	# template|sfu|sfu20|rfc2307
   $offline_logon      = false,
   $refresh_tickets    = false,
+  $template_homedir   = '/home/%D/%U',
+  $template_shell     = '/bin/false',
   $use_default_domain = false,
   $winbind_package    = $samba::params::winbind_package,
 ) inherits samba::params {
